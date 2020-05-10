@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import tensorflowIconURL from './tensorflow/tensorflow.png';
+import tensorflowInsetIconURL from './tensorflow/tensorflow-small.svg';
+
 export default [
     {
         name: (
@@ -317,5 +320,25 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
-    }
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Tensorflow"
+                description="Name for the 'Tensorflow' extension"
+                id="gui.extension.tensorflow.name"
+            />
+        ),
+        extensionId: 'tensorflow',
+        iconURL: tensorflowIconURL,
+        insetIconURL: tensorflowInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Definition tensorflow model for deep learning."
+                description="Description for the 'Tensorflow' extension"
+                id="gui.extension.tensorflow.description"
+            />
+        ),
+        featured: true
+    },
 ];
